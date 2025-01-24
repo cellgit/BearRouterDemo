@@ -15,6 +15,14 @@
 		848335BD2D435EB300D9301D /* BearRouterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335BC2D435EB300D9301D /* BearRouterDemoUITests.swift */; };
 		848335BF2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */; };
 		848335CD2D435F7400D9301D /* BearRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 848335CC2D435F7400D9301D /* BearRouter */; };
+		848335D02D43662900D9301D /* MainRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335CF2D43662900D9301D /* MainRoute.swift */; };
+		848335D22D43663000D9301D /* SubModuleRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D12D43663000D9301D /* SubModuleRoute.swift */; };
+		848335D42D43666400D9301D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D32D43666400D9301D /* DetailView.swift */; };
+		848335D62D43667900D9301D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D52D43667900D9301D /* SettingsView.swift */; };
+		848335D82D43668C00D9301D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D72D43668C00D9301D /* ProfileView.swift */; };
+		848335DA2D43669E00D9301D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D92D43669E00D9301D /* HomeView.swift */; };
+		848335DC2D436C1000D9301D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335DB2D436C1000D9301D /* AppRouter.swift */; };
+		848335DE2D436C2B00D9301D /* RouteMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335DD2D436C2B00D9301D /* RouteMoudle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		848335B82D435EB300D9301D /* BearRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848335BC2D435EB300D9301D /* BearRouterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoUITests.swift; sourceTree = "<group>"; };
 		848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		848335CF2D43662900D9301D /* MainRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoute.swift; sourceTree = "<group>"; };
+		848335D12D43663000D9301D /* SubModuleRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModuleRoute.swift; sourceTree = "<group>"; };
+		848335D32D43666400D9301D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		848335D52D43667900D9301D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		848335D72D43668C00D9301D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		848335D92D43669E00D9301D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		848335DB2D436C1000D9301D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		848335DD2D436C2B00D9301D /* RouteMoudle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMoudle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,11 @@
 			children = (
 				848335A02D435EB300D9301D /* BearRouterDemoApp.swift */,
 				848335A22D435EB300D9301D /* ContentView.swift */,
+				848335D92D43669E00D9301D /* HomeView.swift */,
+				848335D32D43666400D9301D /* DetailView.swift */,
+				848335D52D43667900D9301D /* SettingsView.swift */,
+				848335D72D43668C00D9301D /* ProfileView.swift */,
+				848335CE2D43661E00D9301D /* RouterModule */,
 				848335A42D435EB300D9301D /* Assets.xcassets */,
 				848335A62D435EB300D9301D /* BearRouterDemo.entitlements */,
 				848335A72D435EB300D9301D /* Preview Content */,
@@ -129,6 +150,17 @@
 				848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */,
 			);
 			path = BearRouterDemoUITests;
+			sourceTree = "<group>";
+		};
+		848335CE2D43661E00D9301D /* RouterModule */ = {
+			isa = PBXGroup;
+			children = (
+				848335DD2D436C2B00D9301D /* RouteMoudle.swift */,
+				848335DB2D436C1000D9301D /* AppRouter.swift */,
+				848335CF2D43662900D9301D /* MainRoute.swift */,
+				848335D12D43663000D9301D /* SubModuleRoute.swift */,
+			);
+			path = RouterModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +300,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				848335A32D435EB300D9301D /* ContentView.swift in Sources */,
+				848335D02D43662900D9301D /* MainRoute.swift in Sources */,
+				848335D22D43663000D9301D /* SubModuleRoute.swift in Sources */,
+				848335D62D43667900D9301D /* SettingsView.swift in Sources */,
+				848335D42D43666400D9301D /* DetailView.swift in Sources */,
+				848335DC2D436C1000D9301D /* AppRouter.swift in Sources */,
+				848335DA2D43669E00D9301D /* HomeView.swift in Sources */,
+				848335D82D43668C00D9301D /* ProfileView.swift in Sources */,
 				848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */,
+				848335DE2D436C2B00D9301D /* RouteMoudle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
