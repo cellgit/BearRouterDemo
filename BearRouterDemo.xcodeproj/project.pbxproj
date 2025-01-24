@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335A02D435EB300D9301D /* BearRouterDemoApp.swift */; };
+		848335A32D435EB300D9301D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335A22D435EB300D9301D /* ContentView.swift */; };
+		848335A52D435EB300D9301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A42D435EB300D9301D /* Assets.xcassets */; };
+		848335A92D435EB300D9301D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A82D435EB300D9301D /* Preview Assets.xcassets */; };
+		848335B32D435EB300D9301D /* BearRouterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335B22D435EB300D9301D /* BearRouterDemoTests.swift */; };
+		848335BD2D435EB300D9301D /* BearRouterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335BC2D435EB300D9301D /* BearRouterDemoUITests.swift */; };
+		848335BF2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */; };
+		848335CD2D435F7400D9301D /* BearRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 848335CC2D435F7400D9301D /* BearRouter */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848335AF2D435EB300D9301D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848335952D435EB300D9301D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8483359C2D435EB300D9301D;
+			remoteInfo = BearRouterDemo;
+		};
+		848335B92D435EB300D9301D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848335952D435EB300D9301D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8483359C2D435EB300D9301D;
+			remoteInfo = BearRouterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8483359D2D435EB300D9301D /* BearRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848335A02D435EB300D9301D /* BearRouterDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoApp.swift; sourceTree = "<group>"; };
+		848335A22D435EB300D9301D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		848335A42D435EB300D9301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848335A62D435EB300D9301D /* BearRouterDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BearRouterDemo.entitlements; sourceTree = "<group>"; };
+		848335A82D435EB300D9301D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		848335AE2D435EB300D9301D /* BearRouterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearRouterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848335B22D435EB300D9301D /* BearRouterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoTests.swift; sourceTree = "<group>"; };
+		848335B82D435EB300D9301D /* BearRouterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BearRouterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848335BC2D435EB300D9301D /* BearRouterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoUITests.swift; sourceTree = "<group>"; };
+		848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8483359A2D435EB300D9301D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848335CD2D435F7400D9301D /* BearRouter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335AB2D435EB300D9301D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335B52D435EB300D9301D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848335942D435EB300D9301D = {
+			isa = PBXGroup;
+			children = (
+				8483359F2D435EB300D9301D /* BearRouterDemo */,
+				848335B12D435EB300D9301D /* BearRouterDemoTests */,
+				848335BB2D435EB300D9301D /* BearRouterDemoUITests */,
+				8483359E2D435EB300D9301D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8483359E2D435EB300D9301D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8483359D2D435EB300D9301D /* BearRouterDemo.app */,
+				848335AE2D435EB300D9301D /* BearRouterDemoTests.xctest */,
+				848335B82D435EB300D9301D /* BearRouterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8483359F2D435EB300D9301D /* BearRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				848335A02D435EB300D9301D /* BearRouterDemoApp.swift */,
+				848335A22D435EB300D9301D /* ContentView.swift */,
+				848335A42D435EB300D9301D /* Assets.xcassets */,
+				848335A62D435EB300D9301D /* BearRouterDemo.entitlements */,
+				848335A72D435EB300D9301D /* Preview Content */,
+			);
+			path = BearRouterDemo;
+			sourceTree = "<group>";
+		};
+		848335A72D435EB300D9301D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				848335A82D435EB300D9301D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		848335B12D435EB300D9301D /* BearRouterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				848335B22D435EB300D9301D /* BearRouterDemoTests.swift */,
+			);
+			path = BearRouterDemoTests;
+			sourceTree = "<group>";
+		};
+		848335BB2D435EB300D9301D /* BearRouterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				848335BC2D435EB300D9301D /* BearRouterDemoUITests.swift */,
+				848335BE2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift */,
+			);
+			path = BearRouterDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8483359C2D435EB300D9301D /* BearRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848335C22D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemo" */;
+			buildPhases = (
+				848335992D435EB300D9301D /* Sources */,
+				8483359A2D435EB300D9301D /* Frameworks */,
+				8483359B2D435EB300D9301D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BearRouterDemo;
+			packageProductDependencies = (
+				848335CC2D435F7400D9301D /* BearRouter */,
+			);
+			productName = BearRouterDemo;
+			productReference = 8483359D2D435EB300D9301D /* BearRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848335AD2D435EB300D9301D /* BearRouterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848335C52D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemoTests" */;
+			buildPhases = (
+				848335AA2D435EB300D9301D /* Sources */,
+				848335AB2D435EB300D9301D /* Frameworks */,
+				848335AC2D435EB300D9301D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848335B02D435EB300D9301D /* PBXTargetDependency */,
+			);
+			name = BearRouterDemoTests;
+			productName = BearRouterDemoTests;
+			productReference = 848335AE2D435EB300D9301D /* BearRouterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		848335B72D435EB300D9301D /* BearRouterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848335C82D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemoUITests" */;
+			buildPhases = (
+				848335B42D435EB300D9301D /* Sources */,
+				848335B52D435EB300D9301D /* Frameworks */,
+				848335B62D435EB300D9301D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848335BA2D435EB300D9301D /* PBXTargetDependency */,
+			);
+			name = BearRouterDemoUITests;
+			productName = BearRouterDemoUITests;
+			productReference = 848335B82D435EB300D9301D /* BearRouterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848335952D435EB300D9301D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8483359C2D435EB300D9301D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					848335AD2D435EB300D9301D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8483359C2D435EB300D9301D;
+					};
+					848335B72D435EB300D9301D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8483359C2D435EB300D9301D;
+					};
+				};
+			};
+			buildConfigurationList = 848335982D435EB300D9301D /* Build configuration list for PBXProject "BearRouterDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848335942D435EB300D9301D;
+			packageReferences = (
+				848335CB2D435F7400D9301D /* XCLocalSwiftPackageReference "../BearRouter" */,
+			);
+			productRefGroup = 8483359E2D435EB300D9301D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8483359C2D435EB300D9301D /* BearRouterDemo */,
+				848335AD2D435EB300D9301D /* BearRouterDemoTests */,
+				848335B72D435EB300D9301D /* BearRouterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8483359B2D435EB300D9301D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848335A92D435EB300D9301D /* Preview Assets.xcassets in Resources */,
+				848335A52D435EB300D9301D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335AC2D435EB300D9301D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335B62D435EB300D9301D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848335992D435EB300D9301D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848335A32D435EB300D9301D /* ContentView.swift in Sources */,
+				848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335AA2D435EB300D9301D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848335B32D435EB300D9301D /* BearRouterDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848335B42D435EB300D9301D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848335BF2D435EB300D9301D /* BearRouterDemoUITestsLaunchTests.swift in Sources */,
+				848335BD2D435EB300D9301D /* BearRouterDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848335B02D435EB300D9301D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8483359C2D435EB300D9301D /* BearRouterDemo */;
+			targetProxy = 848335AF2D435EB300D9301D /* PBXContainerItemProxy */;
+		};
+		848335BA2D435EB300D9301D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8483359C2D435EB300D9301D /* BearRouterDemo */;
+			targetProxy = 848335B92D435EB300D9301D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		848335C02D435EB300D9301D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		848335C12D435EB300D9301D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		848335C32D435EB300D9301D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BearRouterDemo/BearRouterDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BearRouterDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.days;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848335C42D435EB300D9301D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BearRouterDemo/BearRouterDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BearRouterDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.days;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		848335C62D435EB300D9301D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BearRouterDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BearRouterDemo";
+			};
+			name = Debug;
+		};
+		848335C72D435EB300D9301D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BearRouterDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BearRouterDemo";
+			};
+			name = Release;
+		};
+		848335C92D435EB300D9301D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BearRouterDemo;
+			};
+			name = Debug;
+		};
+		848335CA2D435EB300D9301D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WGTAZF6C7D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BearRouterDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848335982D435EB300D9301D /* Build configuration list for PBXProject "BearRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848335C02D435EB300D9301D /* Debug */,
+				848335C12D435EB300D9301D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848335C22D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848335C32D435EB300D9301D /* Debug */,
+				848335C42D435EB300D9301D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848335C52D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848335C62D435EB300D9301D /* Debug */,
+				848335C72D435EB300D9301D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848335C82D435EB300D9301D /* Build configuration list for PBXNativeTarget "BearRouterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848335C92D435EB300D9301D /* Debug */,
+				848335CA2D435EB300D9301D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		848335CB2D435F7400D9301D /* XCLocalSwiftPackageReference "../BearRouter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../BearRouter;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		848335CC2D435F7400D9301D /* BearRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BearRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 848335952D435EB300D9301D /* Project object */;
+}
