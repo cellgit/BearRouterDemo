@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335A02D435EB300D9301D /* BearRouterDemoApp.swift */; };
-		848335A32D435EB300D9301D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335A22D435EB300D9301D /* ContentView.swift */; };
 		848335A52D435EB300D9301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A42D435EB300D9301D /* Assets.xcassets */; };
 		848335A92D435EB300D9301D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A82D435EB300D9301D /* Preview Assets.xcassets */; };
 		848335B32D435EB300D9301D /* BearRouterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335B22D435EB300D9301D /* BearRouterDemoTests.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		8483359D2D435EB300D9301D /* BearRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848335A02D435EB300D9301D /* BearRouterDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoApp.swift; sourceTree = "<group>"; };
-		848335A22D435EB300D9301D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		848335A42D435EB300D9301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848335A62D435EB300D9301D /* BearRouterDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BearRouterDemo.entitlements; sourceTree = "<group>"; };
 		848335A82D435EB300D9301D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				848335A02D435EB300D9301D /* BearRouterDemoApp.swift */,
-				848335A22D435EB300D9301D /* ContentView.swift */,
 				848335D92D43669E00D9301D /* HomeView.swift */,
 				848335D32D43666400D9301D /* DetailView.swift */,
 				848335D52D43667900D9301D /* SettingsView.swift */,
@@ -299,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848335A32D435EB300D9301D /* ContentView.swift in Sources */,
 				848335D02D43662900D9301D /* MainRoute.swift in Sources */,
 				848335D22D43663000D9301D /* SubModuleRoute.swift in Sources */,
 				848335D62D43667900D9301D /* SettingsView.swift in Sources */,

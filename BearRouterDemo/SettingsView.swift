@@ -10,12 +10,12 @@ import BearRouter
 
 struct SettingsView: View {
     
-    @EnvironmentObject var router: AppRouter
+    @EnvironmentObject private var router: AppRouter
     
     var body: some View {
         
         Button("返回上一页") {
-//            router.pop()
+            //            router.pop()
             
             let json = ["name": "张三", "age": 18] as [String : Any]
             router.pop(json)

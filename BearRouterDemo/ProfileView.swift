@@ -10,6 +10,8 @@ import BearRouter
 
 struct ProfileView: View {
     
+    @EnvironmentObject private var router: AppRouter
+    
     let userID: String
     
     @State private var navigateToDetail = false
@@ -21,19 +23,9 @@ struct ProfileView: View {
             Text("子模块的 个人资料，userID = \(userID)")
                 .font(.title3)
             
-            // 点击按钮跳转到详情页面
-            NavigationLink(destination: DetailView(message:  userID)) {
-                Text("查看详情")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            .padding()
-            
             // 点击按钮触发跳转
             Button("查看详情") {
-                navigateToDetail = true  // 改变状态，触发跳转
+                router.push(.main(.detail(message: "ProfileView to DetailView")))
             }
             .padding()
             .background(Color.blue)
@@ -43,9 +35,6 @@ struct ProfileView: View {
             
         }
         .navigationTitle("个人资料")
-        .navigationDestination(isPresented: $navigateToDetail) {
-            DetailView(message: userID)  // 跳转到 DetailView
-        }
         
     }
     

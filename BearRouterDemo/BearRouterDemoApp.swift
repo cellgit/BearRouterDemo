@@ -13,25 +13,40 @@ struct BearRouterDemoApp: App {
     
     @StateObject private var router = AppRouter()
     
+    @State private var selectedTab: Int = 0
+    
     var body: some Scene {
         WindowGroup {
             // 右侧的内容区域，包含 TabView
-            TabView {
+            TabView(selection: $selectedTab) {
                 // Tab 1: 个人资料视图
-                HomeView()
-                    .tabItem {
-                        Label("主页", systemImage: "person.circle")
-                    }
-                    .environmentObject(router)  // 让 router 可以在 ProfileView 中访问
+                NavigationStack(path: $router.navigationPath) {
+                    HomeView()
+                        .navigationDestination(for: RouteMoudle.self) {
+                            router.destinationView(for: $0)
+                        }
+                }
+                .tabItem {
+                    Label("主页", systemImage: "person.circle")
+                }
+                .tag(0)
                 
-                // Tab 2: 详情视图
-                DetailView(message: "Hello from Detail")
-                    .tabItem {
-                        Label("详情", systemImage: "doc.text")
-                    }
-                    .environmentObject(router)  // 让 router 可以在 DetailView 中访问
+                NavigationStack(path: $router.navigationPath) {
+                    // Tab 2: 详情视图
+                    DetailView(message: "Hello from Detail")
+                        .navigationDestination(for: RouteMoudle.self) {
+                            router.destinationView(for: $0)
+                        }
+                }
+                .tabItem {
+                    Label("详情", systemImage: "doc.text")
+                }
+                .tag(1)
             }
-            .environmentObject(router)  // 在整个 TabView 中共享 router
+            .environmentObject(router)
+            .onChange(of: selectedTab) { oldValue, newValue in
+                router.popToRoot()
+            }
         }
     }
 }
