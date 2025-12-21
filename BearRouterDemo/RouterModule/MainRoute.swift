@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import BearRouter
 
 /// 主模块的路由
-enum MainRoute: RouteProtocol {
+enum MainRoute: Hashable, Sendable {
     case home
     case detail(message: String)
 

@@ -15,23 +15,26 @@ struct BearRouterDemoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            // 右侧的内容区域，包含 TabView
-            TabView {
-                // Tab 1: 个人资料视图
-                HomeView()
-                    .tabItem {
+            TabNavigationHost(
+                navigator: router.tabNavigator,
+                registry: router.registry,
+                tabs: [
+                    NavigableTab(tabID: AppTab.home) {
                         Label("主页", systemImage: "person.circle")
-                    }
-                    .environmentObject(router)  // 让 router 可以在 ProfileView 中访问
-                
-                // Tab 2: 详情视图
-                DetailView(message: "Hello from Detail")
-                    .tabItem {
+                    } content: {
+                        HomeView()
+                    }.eraseToAny(),
+                    NavigableTab(tabID: AppTab.detail) {
                         Label("详情", systemImage: "doc.text")
-                    }
-                    .environmentObject(router)  // 让 router 可以在 DetailView 中访问
+                    } content: {
+                        DetailView(message: "Hello from Detail")
+                    }.eraseToAny()
+                ]
+            )
+            .environmentObject(router)
+            .onOpenURL { url in
+                router.handleDeepLink(url)
             }
-            .environmentObject(router)  // 在整个 TabView 中共享 router
         }
     }
 }

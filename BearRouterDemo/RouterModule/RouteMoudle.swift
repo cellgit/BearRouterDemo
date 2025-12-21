@@ -5,11 +5,8 @@
 //  Created by admin on 2025/1/24.
 //
 
-import SwiftUI
-import BearRouter
-
 /// 主应用路由类型
-enum RouteMoudle: RouteProtocol {
+enum RouteMoudle: Hashable, Sendable {
     case main(MainRoute)
     case sub(SubModuleRoute)
     

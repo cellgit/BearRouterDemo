@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import BearRouter
 
 struct ContentView: View {
     var body: some View {

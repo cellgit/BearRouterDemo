@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-import BearRouter
 
 struct ProfileView: View {
     
     let userID: String
     
-    @State private var navigateToDetail = false
+    @EnvironmentObject var router: AppRouter
     
     
     var body: some View {
@@ -22,7 +21,7 @@ struct ProfileView: View {
                 .font(.title3)
             
             // 点击按钮跳转到详情页面
-            NavigationLink(destination: DetailView(message:  userID)) {
+            NavigationLink(value: AnyHashable(RouteMoudle.main(.detail(message: userID)))) {
                 Text("查看详情")
                     .padding()
                     .background(Color.blue)
@@ -33,7 +32,7 @@ struct ProfileView: View {
             
             // 点击按钮触发跳转
             Button("查看详情") {
-                navigateToDetail = true  // 改变状态，触发跳转
+                router.push(.main(.detail(message: userID)))
             }
             .padding()
             .background(Color.blue)
@@ -43,9 +42,6 @@ struct ProfileView: View {
             
         }
         .navigationTitle("个人资料")
-        .navigationDestination(isPresented: $navigateToDetail) {
-            DetailView(message: userID)  // 跳转到 DetailView
-        }
         
     }
     

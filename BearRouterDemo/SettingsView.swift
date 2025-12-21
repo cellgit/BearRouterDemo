@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import BearRouter
 
 struct SettingsView: View {
     

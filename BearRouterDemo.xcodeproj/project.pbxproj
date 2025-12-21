@@ -23,6 +23,9 @@
 		848335DA2D43669E00D9301D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335D92D43669E00D9301D /* HomeView.swift */; };
 		848335DC2D436C1000D9301D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335DB2D436C1000D9301D /* AppRouter.swift */; };
 		848335DE2D436C2B00D9301D /* RouteMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335DD2D436C2B00D9301D /* RouteMoudle.swift */; };
+		CE4E7C812EF7A9BE00A8BB9B /* BearRouter in Frameworks */ = {isa = PBXBuildFile; productRef = CE4E7C802EF7A9BE00A8BB9B /* BearRouter */; };
+		CE4E7C832EF7A9BE00A8BB9B /* BearRouterCore in Frameworks */ = {isa = PBXBuildFile; productRef = CE4E7C822EF7A9BE00A8BB9B /* BearRouterCore */; };
+		CE4E7C852EF7A9BE00A8BB9B /* BearRouterTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CE4E7C842EF7A9BE00A8BB9B /* BearRouterTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E7C832EF7A9BE00A8BB9B /* BearRouterCore in Frameworks */,
 				848335CD2D435F7400D9301D /* BearRouter in Frameworks */,
+				CE4E7C852EF7A9BE00A8BB9B /* BearRouterTesting in Frameworks */,
+				CE4E7C812EF7A9BE00A8BB9B /* BearRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +187,9 @@
 			name = BearRouterDemo;
 			packageProductDependencies = (
 				848335CC2D435F7400D9301D /* BearRouter */,
+				CE4E7C802EF7A9BE00A8BB9B /* BearRouter */,
+				CE4E7C822EF7A9BE00A8BB9B /* BearRouterCore */,
+				CE4E7C842EF7A9BE00A8BB9B /* BearRouterTesting */,
 			);
 			productName = BearRouterDemo;
 			productReference = 8483359D2D435EB300D9301D /* BearRouterDemo.app */;
@@ -255,7 +264,7 @@
 			);
 			mainGroup = 848335942D435EB300D9301D;
 			packageReferences = (
-				848335CB2D435F7400D9301D /* XCLocalSwiftPackageReference "../BearRouter" */,
+				CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "../BearRouter" */,
 			);
 			productRefGroup = 8483359E2D435EB300D9301D /* Products */;
 			projectDirPath = "";
@@ -482,10 +491,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,10 +529,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.days;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -544,8 +553,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,8 +576,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,8 +598,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,8 +620,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liuhongli.BearRouterDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -667,7 +676,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		848335CB2D435F7400D9301D /* XCLocalSwiftPackageReference "../BearRouter" */ = {
+		CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "../BearRouter" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../BearRouter;
 		};
@@ -677,6 +686,18 @@
 		848335CC2D435F7400D9301D /* BearRouter */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BearRouter;
+		};
+		CE4E7C802EF7A9BE00A8BB9B /* BearRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BearRouter;
+		};
+		CE4E7C822EF7A9BE00A8BB9B /* BearRouterCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BearRouterCore;
+		};
+		CE4E7C842EF7A9BE00A8BB9B /* BearRouterTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BearRouterTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
