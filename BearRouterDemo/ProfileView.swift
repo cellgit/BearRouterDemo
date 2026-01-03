@@ -9,10 +9,9 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    let userID: String
-    
     @EnvironmentObject var router: AppRouter
     
+    let userID: String
     
     var body: some View {
         
