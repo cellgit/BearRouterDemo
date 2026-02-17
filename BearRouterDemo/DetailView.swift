@@ -2,17 +2,15 @@
 //  DetailView.swift
 //  BearRouterDemo
 //
-//  Created by admin on 2025/1/24.
-//
 
 import SwiftUI
 
 struct DetailView: View {
-    
+
     let message: String
-    
-    @EnvironmentObject var router: AppRouter  // 注入 Router 实例
-    
+
+    @Environment(AppRouter.self) private var router
+
     var body: some View {
         VStack(spacing: 16) {
             Text("参数 message: \(message)")

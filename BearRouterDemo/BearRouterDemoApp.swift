@@ -2,22 +2,20 @@
 //  BearRouterDemoApp.swift
 //  BearRouterDemo
 //
-//  Created by admin on 2025/1/24.
-//
 
 import SwiftUI
 import BearRouter
+import BearRouterCore
 
 @main
 struct BearRouterDemoApp: App {
-    
-    @StateObject private var router = AppRouter()
-    
+
+    @State private var router = AppRouter()
+
     var body: some Scene {
         WindowGroup {
             TabNavigationHost(
                 navigator: router.tabNavigator,
-                registry: router.registry,
                 tabs: [
                     NavigableTab(tabID: AppTab.home) {
                         Label("主页", systemImage: "person.circle")
@@ -30,8 +28,10 @@ struct BearRouterDemoApp: App {
                         DetailView(message: "Hello from Detail")
                     }.eraseToAny()
                 ]
-            )
-            .environmentObject(router)
+            ) { route in
+                route.destinationView
+            }
+            .environment(router)
             .onOpenURL { url in
                 router.handleDeepLink(url)
             }

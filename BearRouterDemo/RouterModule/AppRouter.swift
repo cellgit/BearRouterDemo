@@ -2,10 +2,9 @@
 //  AppRouter.swift
 //  BearRouterDemo
 //
-//  Created by admin on 2025/1/24.
-//
 
 import SwiftUI
+import Observation
 import BearRouter
 import BearRouterCore
 
@@ -14,28 +13,19 @@ enum AppTab: Hashable, Sendable {
     case detail
 }
 
+@Observable
 @MainActor
-final class AppRouter: ObservableObject {
+final class AppRouter {
     let tabNavigator: TabNavigator<AppTab, RouteMoudle>
-    let registry: DestinationRegistry<RouteMoudle>
 
-    // Keeps optional return callbacks aligned with explicit push/pop calls in the demo.
+    @ObservationIgnored
     private var returnHandlers: [((Any?) -> Void)?] = []
 
     init() {
         tabNavigator = TabNavigator<AppTab, RouteMoudle>()
-        registry = DestinationRegistry<RouteMoudle> { _ in
-            AnyView(Text("Missing route"))
-        }
-        registry.register(RouteMoudle.self) { route in
-            switch route {
-            case let .main(mainRoute):
-                mainRoute.destinationView()
-            case let .sub(subRoute):
-                subRoute.destinationView()
-            }
-        }
     }
+
+    // MARK: - Navigation
 
     func push(_ route: RouteMoudle, onReturn: ((Any?) -> Void)? = nil) {
         returnHandlers.append(onReturn)
@@ -67,6 +57,8 @@ final class AppRouter: ObservableObject {
             await tabNavigator.handle(.navigateCurrent(.dismissAll))
         }
     }
+
+    // MARK: - Deep Link
 
     func handleDeepLink(_ url: URL) {
         guard let routerPath = url.routerPath, !routerPath.isEmpty else {

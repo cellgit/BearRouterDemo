@@ -1,21 +1,33 @@
 //
-//  AppRoute.swift
+//  RouteMoudle.swift
 //  BearRouterDemo
 //
-//  Created by admin on 2025/1/24.
-//
 
-/// 主应用路由类型
+import SwiftUI
+
+/// 主应用路由类型 — 聚合所有子模块路由
 enum RouteMoudle: Hashable, Sendable {
     case main(MainRoute)
     case sub(SubModuleRoute)
-    
-    var id: String {
+
+    /// 路由 → 视图映射（@ViewBuilder，零 AnyView）
+    @ViewBuilder @MainActor
+    var destinationView: some View {
         switch self {
-        case let .main(m):
-            return "AppRoute_main_\(m.id)"
-        case let .sub(s):
-            return "AppRoute_sub_\(s.id)"
+        case let .main(route):
+            switch route {
+            case .home:
+                HomeView()
+            case let .detail(msg):
+                DetailView(message: msg)
+            }
+        case let .sub(route):
+            switch route {
+            case .settings:
+                SettingsView()
+            case let .profile(userID):
+                ProfileView(userID: userID)
+            }
         }
     }
 }
