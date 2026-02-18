@@ -4,6 +4,7 @@
 //
 
 import SwiftUI
+import BearRouter
 
 /// 主应用路由类型 — 聚合所有子模块路由
 enum RouteMoudle: Hashable, Sendable {
@@ -28,6 +29,19 @@ enum RouteMoudle: Hashable, Sendable {
             case let .profile(userID):
                 ProfileView(userID: userID)
             }
+        }
+    }
+
+    /// 每个路由的过渡动画样式
+    ///
+    /// - `.zoom`  → 从源视图缩放展开，支持 ↓ 下滑 + ← 侧滑 两种手势返回
+    /// - `.slide` → 标准水平推入，仅支持 ← 侧滑返回
+    var transitionStyle: BearTransitionStyle {
+        switch self {
+        case .main(.detail):   .zoom   // 详情页：zoom 过渡
+        case .sub(.profile):   .zoom   // 个人资料：zoom 过渡
+        case .sub(.settings):  .slide  // 设置页：标准 slide
+        case .main(.home):     .automatic
         }
     }
 }

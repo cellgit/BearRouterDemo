@@ -18,16 +18,18 @@ struct BearRouterDemoApp: App {
                 navigator: router.tabNavigator,
                 tabs: [
                     NavigableTab(tabID: AppTab.home) {
-                        Label("主页", systemImage: "person.circle")
+                        Label("主页", systemImage: "house.fill")
                     } content: {
                         HomeView()
                     }.eraseToAny(),
                     NavigableTab(tabID: AppTab.detail) {
-                        Label("详情", systemImage: "doc.text")
+                        Label("设置", systemImage: "gearshape.fill")
                     } content: {
-                        DetailView(message: "Hello from Detail")
+                        SettingsView()
                     }.eraseToAny()
-                ]
+                ],
+                // ✅ 传入过渡样式闭包 — BearRouter 自动对 zoom 路由应用 matchedTransitionSource
+                transitionStyle: { route in route.transitionStyle }
             ) { route in
                 route.destinationView
             }
