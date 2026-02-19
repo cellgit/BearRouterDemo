@@ -38,9 +38,7 @@ struct ProfileView: View {
                 VStack(spacing: 12) {
                     Text("继续导航").font(.headline)
 
-                    Button {
-                        router.push(.main(.detail(message: "来自 \(userID) 的详情")))
-                    } label: {
+                    NavigationLink(value: RouteMoudle.main(.detail(message: "来自 \(userID) 的详情"))) {
                         HStack {
                             Image(systemName: "doc.text.fill")
                             Text("查看详情（Zoom）")

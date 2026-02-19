@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3573910C8EB985CD7AFEC41E /* RawZoomTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5FCB4DC3550DC7F003AAA /* RawZoomTestView.swift */; };
 		848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848335A02D435EB300D9301D /* BearRouterDemoApp.swift */; };
 		848335A52D435EB300D9301D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A42D435EB300D9301D /* Assets.xcassets */; };
 		848335A92D435EB300D9301D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848335A82D435EB300D9301D /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29A5FCB4DC3550DC7F003AAA /* RawZoomTestView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RawZoomTestView.swift; sourceTree = "<group>"; };
 		8483359D2D435EB300D9301D /* BearRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848335A02D435EB300D9301D /* BearRouterDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouterDemoApp.swift; sourceTree = "<group>"; };
 		848335A42D435EB300D9301D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				848335A42D435EB300D9301D /* Assets.xcassets */,
 				848335A62D435EB300D9301D /* BearRouterDemo.entitlements */,
 				848335A72D435EB300D9301D /* Preview Content */,
+				29A5FCB4DC3550DC7F003AAA /* RawZoomTestView.swift */,
 			);
 			path = BearRouterDemo;
 			sourceTree = "<group>";
@@ -261,7 +264,7 @@
 			);
 			mainGroup = 848335942D435EB300D9301D;
 			packageReferences = (
-				CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "../BearRouter" */,
+				CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "BearRouter" */,
 			);
 			productRefGroup = 8483359E2D435EB300D9301D /* Products */;
 			projectDirPath = "";
@@ -314,6 +317,7 @@
 				848335D82D43668C00D9301D /* ProfileView.swift in Sources */,
 				848335A12D435EB300D9301D /* BearRouterDemoApp.swift in Sources */,
 				848335DE2D436C2B00D9301D /* RouteMoudle.swift in Sources */,
+				3573910C8EB985CD7AFEC41E /* RawZoomTestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +676,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "../BearRouter" */ = {
+		CE4E7C7F2EF7A9BE00A8BB9B /* XCLocalSwiftPackageReference "BearRouter" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../BearRouter;
 		};

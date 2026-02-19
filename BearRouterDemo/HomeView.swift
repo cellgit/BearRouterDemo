@@ -37,14 +37,14 @@ struct HomeView: View {
 
                 LazyVGrid(columns: [.init(.flexible()), .init(.flexible())], spacing: 12) {
                     ForEach(items, id: \.id) { item in
-                        cardView(item: item)
-                            // ✅ 标记为 zoom 过渡的源视图
-                            .bearTransitionSource(
-                                id: RouteMoudle.main(.detail(message: item.title))
-                            )
-                            .onTapGesture {
-                                router.push(.main(.detail(message: item.title)))
-                            }
+                        NavigationLink(value: RouteMoudle.main(.detail(message: item.title))) {
+                            cardView(item: item)
+                        }
+                        .buttonStyle(.plain)
+                        // ✅ 标记为 zoom 过渡的源视图
+                        .bearTransitionSource(
+                            id: RouteMoudle.main(.detail(message: item.title))
+                        )
                     }
                 }
 
@@ -109,27 +109,27 @@ struct HomeView: View {
     }
 
     private func profileRow(userID: String, name: String, color: Color) -> some View {
-        HStack(spacing: 12) {
-            Circle()
-                .fill(color.gradient)
-                .frame(width: 44, height: 44)
-                .overlay {
-                    Text(String(name.prefix(1)))
-                        .font(.headline).foregroundStyle(.white)
+        NavigationLink(value: RouteMoudle.sub(.profile(userID: userID))) {
+            HStack(spacing: 12) {
+                Circle()
+                    .fill(color.gradient)
+                    .frame(width: 44, height: 44)
+                    .overlay {
+                        Text(String(name.prefix(1)))
+                            .font(.headline).foregroundStyle(.white)
+                    }
+                VStack(alignment: .leading) {
+                    Text(name).font(.headline)
+                    Text("ID: \(userID)").font(.caption).foregroundStyle(.secondary)
                 }
-            VStack(alignment: .leading) {
-                Text(name).font(.headline)
-                Text("ID: \(userID)").font(.caption).foregroundStyle(.secondary)
+                Spacer()
+                Image(systemName: "chevron.right").foregroundStyle(.tertiary)
             }
-            Spacer()
-            Image(systemName: "chevron.right").foregroundStyle(.tertiary)
+            .padding()
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+            // ✅ 标记为 zoom 过渡的源视图（放在 label 内部）
+            .bearTransitionSource(id: RouteMoudle.sub(.profile(userID: userID)))
         }
-        .padding()
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
-        // ✅ 标记为 zoom 过渡的源视图
-        .bearTransitionSource(id: RouteMoudle.sub(.profile(userID: userID)))
-        .onTapGesture {
-            router.push(.sub(.profile(userID: userID)))
-        }
+        .buttonStyle(.plain)
     }
 }
